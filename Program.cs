@@ -21,13 +21,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("start");
-            
-            using(var db = new Context()){
-                var users = db.User.Where(w=>w.User1=="root");
-                foreach(var i in users){
-                    Console.WriteLine($"{i.Host} {i.User1}");
-                }
-            }
+             var dbtest = new DBTest();
         }
     }
 }

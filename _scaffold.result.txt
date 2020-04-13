@@ -1,0 +1,31 @@
+Using project 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\efMysql.csproj'.
+Using startup project 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\efMysql.csproj'.
+Writing 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\obj\efMysql.csproj.EntityFrameworkCore.targets'...
+dotnet msbuild /target:GetEFProjectMetadata /property:EFProjectMetadataFile=C:\Users\wato\AppData\Local\Temp\tmp95B7.tmp /verbosity:quiet /nologo C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\efMysql.csproj
+Writing 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\obj\efMysql.csproj.EntityFrameworkCore.targets'...
+dotnet msbuild /target:GetEFProjectMetadata /property:EFProjectMetadataFile=C:\Users\wato\AppData\Local\Temp\tmp9EA1.tmp /verbosity:quiet /nologo C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\efMysql.csproj
+dotnet build C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\efMysql.csproj /p:GenerateRuntimeConfigurationFiles=True /verbosity:quiet /nologo
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:03.48
+dotnet exec --depsfile C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\bin\Debug\netcoreapp3.1\efMysql.deps.json --additionalprobingpath C:\Users\wato\.nuget\packages --additionalprobingpath "C:\Program Files\dotnet\sdk\NuGetFallbackFolder" --runtimeconfig C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\bin\Debug\netcoreapp3.1\efMysql.runtimeconfig.json C:\Users\wato\.nuget\packages\microsoft.entityframeworkcore.tools.dotnet\2.0.3\tools\netcoreapp2.0\ef.dll dbcontext scaffold "Server=localhost; Port=3306; Database=mysql; Uid=root; Pwd=root;" Pomelo.EntityFrameworkCore.MySql -o Models --context Context --assembly C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\bin\Debug\netcoreapp3.1\efMysql.dll --startup-assembly C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\bin\Debug\netcoreapp3.1\efMysql.dll --project-dir C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\ --verbose --root-namespace efMysql
+Using assembly 'efMysql'.
+Using startup assembly 'efMysql'.
+Using application base 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\bin\Debug\netcoreapp3.1'.
+Using working directory 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql'.
+Using root namespace 'efMysql'.
+Using project directory 'C:\Users\wato\Documents\github\WaToI\dotnetcore\efMysql\'.
+Finding design-time services for provider 'Pomelo.EntityFrameworkCore.MySql'...
+Using design-time services from provider 'Pomelo.EntityFrameworkCore.MySql'.
+Finding design-time services referenced by assembly 'efMysql'.
+No referenced design-time services were found.
+Finding IDesignTimeServices implementations in assembly 'efMysql'...
+No design-time services were found.
+Could not find type mapping for column 'columns_priv.Column_priv' with data type 'set('Select','Insert','Update','References')'. Skipping column.
+Could not find type mapping for column 'procs_priv.Proc_priv' with data type 'set('Execute','Alter Routine','Grant')'. Skipping column.
+Could not find type mapping for column 'tables_priv.Table_priv' with data type 'set('Select','Insert','Update','Delete','Create','Drop','Grant','References','Index','Alter','Create View','Show view','Trigger')'. Skipping column.
+Could not find type mapping for column 'tables_priv.Column_priv' with data type 'set('Select','Insert','Update','References')'. Skipping column.
+Could not find type mapping for column 'user.User_attributes' with data type 'json'. Skipping column.
