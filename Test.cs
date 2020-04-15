@@ -17,6 +17,8 @@ namespace efMysql
             Console.WriteLine(">>>TestEfSelectLinq");
             using (var db = new Context())
             {
+                db.Database.EnsureCreated();
+                db.Database.Migrate();
                 var users = db.User.Where(w => w.User1 == "root");
                 foreach (var i in users)
                 {
